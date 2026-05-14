@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
-import project1 from '../assets/project1.png';
+import project1 from '../assets/project-desa.jpg';
 import project2 from '../assets/project2.png';
 import project3 from '../assets/project3.png';
 import { useLanguage } from '../context/LanguageContext';
