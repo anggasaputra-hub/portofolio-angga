@@ -1474,3 +1474,108 @@ textarea.form-input {
     font-size: 1.1rem;
   }
 }
+
+/* Music Player */
+.music-player-container {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.music-player-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.music-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all var(--transition-medium);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.music-btn.playing {
+  background: var(--gradient-1);
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+}
+
+.music-btn:hover {
+  transform: scale(1.1);
+  border-color: var(--gradient-1);
+}
+
+.mute-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all var(--transition-medium);
+}
+
+.mute-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--text-secondary);
+}
+
+/* Music Bars Animation */
+.music-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 15px;
+}
+
+.music-bars span {
+  width: 3px;
+  background: white;
+  border-radius: 2px;
+  animation: music-bar 1s ease-in-out infinite;
+}
+
+.music-bars span:nth-child(1) { height: 60%; animation-delay: 0s; }
+.music-bars span:nth-child(2) { height: 100%; animation-delay: 0.2s; }
+.music-bars span:nth-child(3) { height: 40%; animation-delay: 0.4s; }
+
+@keyframes music-bar {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.5); }
+}
+
+@media (max-width: 768px) {
+  .music-player-container {
+    bottom: 90px;
+    right: 20px;
+  }
+  
+  .music-btn {
+    width: 45px;
+    height: 45px;
+  }
+}

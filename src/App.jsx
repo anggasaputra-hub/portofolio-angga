@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import Preloader from './components/Preloader';
+import MusicPlayer from './components/MusicPlayer';
 import { LanguageProvider } from './context/LanguageContext';
 import './index.css';
 
@@ -32,6 +33,7 @@ function App() {
             <Contact />
           </main>
           <Footer />
+          <MusicPlayer />
           <ScrollToTop />
         </div>
       )}
