@@ -15,71 +15,27 @@ const Projects = () => {
 
     const projects = [
         {
-            title: 'E-Commerce Platform',
+            title: 'Website Desa Digital DTIRIP',
             description: {
-                en: 'A full-featured e-commerce platform with shopping cart, payment integration, and admin dashboard.',
-                id: 'Platform e-commerce lengkap dengan keranjang belanja, integrasi pembayaran, dan dasbor admin.',
+                en: 'A web-based village profile website built to provide online village information such as village profile, news, activity gallery, community services, and an admin dashboard for content management.',
+                id: 'Website profil desa berbasis web yang dibuat untuk menyediakan informasi desa secara online seperti profil desa, berita, galeri kegiatan, layanan masyarakat, dan dashboard admin untuk pengelolaan konten website.',
             },
             image: project1,
-            tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-            github: 'https://github.com',
-            live: 'https://example.com',
+            tech: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js', 'JSON Database'],
+            github: '#',
+            live: 'https://dtirip.my.id',
         },
         {
-            title: 'Social Media App',
+            title: 'Website Top Up Diamond Game',
             description: {
-                en: 'A modern social media application with real-time messaging, posts, and user interactions.',
-                id: 'Aplikasi media sosial modern dengan pesan real-time, postingan, dan interaksi pengguna.',
+                en: 'A game diamond top-up website built to facilitate users in purchasing diamonds and game vouchers online with a modern interface and a simple transaction process.',
+                id: 'Website top up diamond game yang dibuat untuk memudahkan pengguna melakukan pembelian diamond dan voucher game secara online dengan tampilan modern dan proses transaksi yang sederhana.',
             },
             image: project2,
-            tech: ['Next.js', 'Socket.io', 'PostgreSQL', 'Tailwind'],
-            github: 'https://github.com',
-            live: 'https://example.com',
-        },
-        {
-            title: 'AI Dashboard',
-            description: {
-                en: 'An intelligent analytics dashboard with machine learning predictions and data visualization.',
-                id: 'Dasbor analitik cerdas dengan prediksi machine learning dan visualisasi data.',
-            },
-            image: project3,
-            tech: ['Python', 'React', 'TensorFlow', 'D3.js'],
-            github: 'https://github.com',
-            live: 'https://example.com',
-        },
-        {
-            title: 'Fitness Tracker',
-            description: {
-                en: 'A mobile-first fitness tracking app with workout plans, progress tracking, and community features.',
-                id: 'Aplikasi pelacak kebugaran mobile-first dengan rencana latihan, pelacak progres, dan fitur komunitas.',
-            },
-            image: project2,
-            tech: ['React Native', 'Firebase', 'Redux', 'Charts'],
-            github: 'https://github.com',
-            live: 'https://example.com',
-        },
-        {
-            title: 'Task Management',
-            description: {
-                en: 'A collaborative task management tool with Kanban boards, team features, and automation.',
-                id: 'Alat manajemen tugas kolaboratif dengan papan Kanban, fitur tim, dan otomatisasi.',
-            },
-            image: project3,
-            tech: ['Vue.js', 'Express', 'MySQL', 'Socket.io'],
-            github: 'https://github.com',
-            live: 'https://example.com',
-        },
-        {
-            title: 'Crypto Exchange',
-            description: {
-                en: 'A cryptocurrency exchange platform with real-time trading, wallet integration, and market analysis.',
-                id: 'Platform pertukaran mata uang kripto dengan trading real-time, integrasi dompet, dan analisis pasar.',
-            },
-            image: project1,
-            tech: ['React', 'Web3.js', 'Node.js', 'Redis'],
-            github: 'https://github.com',
-            live: 'https://example.com',
-        },
+            tech: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js'],
+            github: '#',
+            live: '#',
+        }
     ];
 
     const containerVariants = {
