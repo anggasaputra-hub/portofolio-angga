@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiMusic, FiVolumeX, FiVolume2 } from 'react-icons/fi';
-import musicFile from '../assets/audio/background-music.mp3';
+import musicFile from '../assets/audio/background-music.wav';
 
 const MusicPlayer = () => {
     const [isPlaying, setIsPlaying] = useState(false);
