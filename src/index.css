@@ -649,8 +649,39 @@ a {
 .skill-percentage {
   font-size: 0.9rem;
   color: var(--text-secondary);
-  margin-top: 10px;
-  text-align: right;
+  font-weight: 500;
+}
+
+.skills-list {
+  margin-top: 20px;
+}
+
+.skill-item {
+  margin-bottom: 20px;
+}
+
+.skill-item:last-child {
+  margin-bottom: 0;
+}
+
+.skill-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.skill-item-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.skill-item-icon {
+  color: var(--gradient-1);
+  display: flex;
 }
 
 /* Projects Section */
@@ -1190,7 +1221,7 @@ textarea.form-input {
   }
 
   .skill-card {
-    padding: 16px;
+    padding: 20px 16px;
     border-radius: 15px;
   }
 
@@ -1198,22 +1229,38 @@ textarea.form-input {
     width: 45px;
     height: 45px;
     font-size: 1.3rem;
-    margin-bottom: 12px;
-    border-radius: 10px;
+    margin-bottom: 10px;
+    border-radius: 12px;
   }
 
   .skill-name {
-    font-size: 1rem;
-    margin-bottom: 10px;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+
+  .skills-list {
+    margin-top: 15px;
+  }
+
+  .skill-item {
+    margin-bottom: 12px;
+  }
+
+  .skill-item-header {
+    margin-bottom: 6px;
+  }
+
+  .skill-item-name {
+    font-size: 0.85rem;
+    gap: 8px;
   }
 
   .skill-bar-container {
-    height: 5px;
+    height: 4px; /* Thinner progress bar */
   }
 
   .skill-percentage {
-    font-size: 0.8rem;
-    margin-top: 5px;
+    font-size: 0.75rem;
   }
 
   /* ---- Projects ---- */
@@ -1228,6 +1275,12 @@ textarea.form-input {
 
   .project-image-wrapper {
     aspect-ratio: 16/9;
+    height: auto; /* Fix stretching */
+  }
+  
+  .project-image {
+    height: 100%;
+    object-fit: cover;
   }
 
   .project-info {
@@ -1256,38 +1309,38 @@ textarea.form-input {
 
   /* ---- Contact ---- */
   .contact-content {
-    gap: 30px;
+    gap: 25px;
   }
 
   .contact-info h3 {
     font-size: 1.3rem;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .contact-info p {
     font-size: 0.85rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .contact-details {
-    gap: 12px;
+    gap: 10px;
   }
 
   .contact-item {
-    padding: 12px;
+    padding: 10px 12px;
     border-radius: 12px;
     gap: 12px;
   }
 
   .contact-item-icon {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     font-size: 1rem;
     border-radius: 10px;
   }
 
   .contact-item-text h4 {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .contact-item-text span {
@@ -1300,7 +1353,7 @@ textarea.form-input {
   }
 
   .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 
   .form-input {
@@ -1310,7 +1363,7 @@ textarea.form-input {
   }
 
   textarea.form-input {
-    min-height: 100px;
+    min-height: 80px;
   }
 
   .submit-btn {
@@ -1346,13 +1399,13 @@ textarea.form-input {
   /* ---- Section title ---- */
   .section-title {
     font-size: clamp(1.6rem, 6vw, 2rem);
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   
   .section-title::after {
-    bottom: -10px;
+    bottom: -8px;
     height: 3px;
-    width: 60px;
+    width: 50px;
   }
 }
 
@@ -1390,7 +1443,7 @@ textarea.form-input {
   }
   
   .skill-card {
-    padding: 12px 14px;
+    padding: 16px 14px;
   }
 }
 

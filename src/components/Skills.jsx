@@ -102,23 +102,12 @@ const Skills = () => {
                             <div className="skill-icon">{category.icon}</div>
                             <h3 className="skill-name">{t.categories[category.titleKey]}</h3>
 
-                            <div style={{ marginTop: '20px' }}>
+                            <div className="skills-list">
                                 {category.skills.map((skill, skillIndex) => (
-                                    <div key={skillIndex} style={{ marginBottom: '20px' }}>
-                                        <div style={{
-                                            display: 'flex',
-                                            justifyContent: 'space-between',
-                                            alignItems: 'center',
-                                            marginBottom: '8px'
-                                        }}>
-                                            <div style={{
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                gap: '10px',
-                                                fontSize: '0.95rem',
-                                                color: 'var(--text-secondary)'
-                                            }}>
-                                                <span style={{ color: 'var(--gradient-1)' }}>{skill.icon}</span>
+                                    <div key={skillIndex} className="skill-item">
+                                        <div className="skill-item-header">
+                                            <div className="skill-item-name">
+                                                <span className="skill-item-icon">{skill.icon}</span>
                                                 {skill.name}
                                             </div>
                                             <span className="skill-percentage">{skill.level}%</span>
