@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import { FiDownload, FiMail, FiInstagram } from 'react-icons/fi';
-import { FaTiktok, FaWhatsapp } from 'react-icons/fa';
+import { FiMail, FiInstagram } from 'react-icons/fi';
+import { FaTiktok } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
 import translations from '../translations';
 
@@ -138,14 +138,6 @@ const Hero = () => {
                     >
                         <FiMail /> {t.talkBtn}
                     </motion.a>
-                    <motion.a
-                        href="#"
-                        className="btn btn-secondary"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                    >
-                        <FiDownload /> {t.cvBtn}
-                    </motion.a>
                 </motion.div>
 
                 <motion.div
@@ -155,7 +147,6 @@ const Hero = () => {
                     transition={{ delay: 0.8, duration: 0.5 }}
                 >
                     {[
-                        { icon: <FaWhatsapp />, href: 'https://wa.me/6288221051462' },
                         { icon: <FiInstagram />, href: 'https://www.instagram.com/4ns.taa?igsh=d2NhOGd2bGt5bHU0&utm_source=qr' },
                         { icon: <FaTiktok />, href: 'https://www.tiktok.com/@4ns.ta?_r=1&_t=ZS-92b4JaTb9vu' },
                     ].map((social, index) => (

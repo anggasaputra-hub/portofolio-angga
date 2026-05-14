@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { FiMail, FiMapPin, FiPhone, FiSend } from 'react-icons/fi';
+import { FiMail, FiMapPin, FiSend } from 'react-icons/fi';
 import { useLanguage } from '../context/LanguageContext';
 import translations from '../translations';
 
@@ -45,7 +45,6 @@ const Contact = () => {
 
     const contactInfo = [
         { icon: <FiMail />, value: 'astaaja075@gmail.com' },
-        { icon: <FiPhone />, value: '088221051462' },
         { icon: <FiMapPin />, value: 'Purworejo, Indonesia' },
     ];
 

@@ -16,7 +16,6 @@ const translations = {
             subtitle: "I'm a passionate",
             description: 'Building beautiful, functional, and user-centered digital experiences. Let\'s turn your vision into reality.',
             talkBtn: "Let's Talk",
-            cvBtn: 'Download CV',
             typed: [
                 'Full Stack Developer', 2000,
                 'UI/UX Designer', 2000,
@@ -63,7 +62,7 @@ const translations = {
             sendBtn: 'Send Message',
             sending: 'Sending...',
             sent: '✓ Message Sent!',
-            contactLabels: ['Email', 'Phone', 'Location'],
+            contactLabels: ['Email', 'Location'],
         },
 
         // Footer
@@ -94,7 +93,6 @@ const translations = {
             subtitle: 'Saya adalah seorang',
             description: 'Membangun pengalaman digital yang indah, fungsional, dan berpusat pada pengguna. Mari wujudkan visi Anda bersama saya.',
             talkBtn: 'Hubungi Saya',
-            cvBtn: 'Unduh CV',
             typed: [
                 'Full Stack Developer', 2000,
                 'Desainer UI/UX', 2000,
@@ -141,7 +139,7 @@ const translations = {
             sendBtn: 'Kirim Pesan',
             sending: 'Mengirim...',
             sent: '✓ Pesan Terkirim!',
-            contactLabels: ['Email', 'Telepon', 'Lokasi'],
+            contactLabels: ['Email', 'Lokasi'],
         },
 
         // Footer
