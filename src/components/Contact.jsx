@@ -3,6 +3,7 @@ import { useRef, useState } from 'react';
 import { FiMail, FiMapPin, FiSend } from 'react-icons/fi';
 import { useLanguage } from '../context/LanguageContext';
 import translations from '../translations';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const ref = useRef(null);
@@ -29,18 +30,36 @@ const Contact = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        const { name, email, subject, message } = formData;
-        const mailtoBody = `Halo Angga,%0D%0A%0D%0ANama: ${encodeURIComponent(name)}%0D%0AEmail: ${encodeURIComponent(email)}%0D%0A%0D%0APesan:%0D%0A${encodeURIComponent(message)}`;
-        const mailtoLink = `mailto:astaaja075@gmail.com?subject=${encodeURIComponent(subject || 'Pesan dari Portfolio')}&body=${mailtoBody}`;
+        const serviceId = 'service_asta'; // Placeholder, user needs to update
+        const templateId = 'template_asta'; // Placeholder
+        const publicKey = 'user_asta_key'; // Placeholder
 
-        window.location.href = mailtoLink;
+        const templateParams = {
+            from_name: formData.name,
+            from_email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+            to_name: 'Angga Saputra',
+        };
 
-        setTimeout(() => {
-            setIsSubmitting(false);
-            setSubmitted(true);
-            setFormData({ name: '', email: '', subject: '', message: '' });
-            setTimeout(() => setSubmitted(false), 4000);
-        }, 800);
+        emailjs.send(
+            serviceId,
+            templateId,
+            templateParams,
+            publicKey
+        )
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                setIsSubmitting(false);
+                setSubmitted(true);
+                setFormData({ name: '', email: '', subject: '', message: '' });
+                setTimeout(() => setSubmitted(false), 4000);
+            })
+            .catch((err) => {
+                console.error('FAILED...', err);
+                setIsSubmitting(false);
+                alert('Gagal mengirim pesan. Silakan coba lagi nanti atau hubungi via email langsung.');
+            });
     };
 
     const contactInfo = [
