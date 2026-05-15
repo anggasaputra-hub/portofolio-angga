@@ -16,6 +16,7 @@ const translations = {
             subtitle: "I'm a passionate",
             description: 'Angga Saputra — Building beautiful, functional, and user-centered digital experiences as a Full Stack Developer.',
             talkBtn: "Let's Talk",
+            cvBtn: "Download CV",
             typed: [
                 'Angga Saputra', 2000,
                 'Full Stack Developer', 2000,
@@ -93,6 +94,7 @@ const translations = {
             subtitle: 'Saya adalah seorang',
             description: 'Angga Saputra — Membangun pengalaman digital yang indah, fungsional, dan berpusat pada pengguna sebagai Full Stack Developer.',
             talkBtn: 'Hubungi Saya',
+            cvBtn: 'Unduh CV',
             typed: [
                 'Angga Saputra', 2000,
                 'Full Stack Developer', 2000,

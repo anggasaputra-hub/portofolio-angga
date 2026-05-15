@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import { FiMail, FiInstagram } from 'react-icons/fi';
+import { FiMail, FiInstagram, FiDownload } from 'react-icons/fi';
+import cvFile from '../assets/CV_Angga_Saputra.pdf';
 import { FaTiktok } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
 import translations from '../translations';
@@ -137,6 +138,15 @@ const Hero = () => {
                         }}
                     >
                         <FiMail /> {t.talkBtn}
+                    </motion.a>
+                    <motion.a
+                        href={cvFile}
+                        download="CV_Angga_Saputra.pdf"
+                        className="btn btn-secondary"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        <FiDownload /> {t.cvBtn}
                     </motion.a>
                 </motion.div>
 
