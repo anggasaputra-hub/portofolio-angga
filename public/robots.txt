@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://4nsporto.vercel.app/sitemap.xml
+Sitemap: https://portofolio-angga-kohl.vercel.app/sitemap.xml
