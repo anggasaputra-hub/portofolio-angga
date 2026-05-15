@@ -1319,17 +1319,21 @@ textarea.form-input {
 
   .project-overlay {
     opacity: 1;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-    padding: 12px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end; /* Align to bottom right */
   }
   
   .project-link {
     width: 42px;
     height: 42px;
-    font-size: 1rem;
-    background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(5px);
+    font-size: 1.1rem;
+    background: var(--gradient-1);
+    color: white;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.5);
+    border: none;
   }
 
   .tech-tag {
