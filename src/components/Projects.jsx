@@ -2,7 +2,7 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import project1 from '../assets/project-desa.jpg';
-import project2 from '../assets/project2.png';
+import project2 from '../assets/pgzone-hero.png';
 import project3 from '../assets/project3.png';
 import { useLanguage } from '../context/LanguageContext';
 import translations from '../translations';
@@ -26,15 +26,15 @@ const Projects = () => {
             live: 'https://dtirip.my.id',
         },
         {
-            title: 'Website Top Up Diamond Game',
+            title: 'PGZONE - Game Top Up Website',
             description: {
-                en: 'A game diamond top-up website built to facilitate users in purchasing diamonds and game vouchers online with a modern interface and a simple transaction process.',
-                id: 'Website top up diamond game yang dibuat untuk memudahkan pengguna melakukan pembelian diamond dan voucher game secara online dengan tampilan modern dan proses transaksi yang sederhana.',
+                en: 'A premium game top-up platform featuring automated instant payments, a Win Rate (WR) calculator utility, comprehensive transaction tables, and a full-featured admin management panel.',
+                id: 'Platform top up game premium dengan pembayaran instan otomatis, utilitas kalkulator Win Rate (WR), tabel transaksi yang komprehensif, dan panel manajemen admin yang lengkap.',
             },
             image: project2,
-            tech: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js'],
+            tech: ['React', 'Node.js', 'Express.js', 'Midtrans API', 'Digiflazz API'],
             github: '#',
-            live: '#',
+            live: 'https://pgzone.id',
         }
     ];
 

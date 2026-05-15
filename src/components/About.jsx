@@ -13,9 +13,9 @@ const About = () => {
     const t = translations[lang].about;
 
     const statsData = [
-        { icon: <FiCode />, number: '50+' },
-        { icon: <FiCoffee />, number: '3+' },
-        { icon: <FiAward />, number: '20+' },
+        { icon: <FiCode />, number: '10+' },
+        { icon: <FiCoffee />, number: '1' },
+        { icon: <FiAward />, number: '5+' },
     ];
 
     const containerVariants = {
