@@ -6,7 +6,8 @@ import {
 } from 'react-icons/fi';
 import {
     SiReact, SiNodedotjs, SiPython, SiJavascript,
-    SiTypescript, SiMongodb, SiTailwindcss, SiFigma
+    SiTypescript, SiMongodb, SiTailwindcss, SiFigma,
+    SiPhp, SiMysql, SiPostgresql
 } from 'react-icons/si';
 import { useLanguage } from '../context/LanguageContext';
 import translations from '../translations';
@@ -40,8 +41,10 @@ const Skills = () => {
             titleKey: 1,
             skills: [
                 { name: 'Node.js', level: 88, icon: <SiNodedotjs /> },
-                { name: 'Python', level: 82, icon: <SiPython /> },
+                { name: 'PHP', level: 85, icon: <SiPhp /> },
+                { name: 'MySQL', level: 88, icon: <SiMysql /> },
                 { name: 'MongoDB', level: 85, icon: <SiMongodb /> },
+                { name: 'Python', level: 82, icon: <SiPython /> },
                 { name: 'REST APIs', level: 90, icon: <FiCloud /> },
             ],
         },
