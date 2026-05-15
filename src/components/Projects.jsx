@@ -88,11 +88,7 @@ const Projects = () => {
                                     alt={project.title}
                                     className="project-image"
                                 />
-                                <motion.div
-                                    className="project-overlay"
-                                    initial={{ opacity: 0 }}
-                                    whileHover={{ opacity: 1 }}
-                                >
+                                <div className="project-overlay">
                                     <div className="project-links">
                                         <motion.a
                                             href={project.live}
@@ -105,7 +101,7 @@ const Projects = () => {
                                             <FiExternalLink />
                                         </motion.a>
                                     </div>
-                                </motion.div>
+                                </div>
                             </div>
 
                             <div className="project-info">
