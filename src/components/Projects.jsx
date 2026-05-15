@@ -22,7 +22,6 @@ const Projects = () => {
             },
             image: project1,
             tech: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js', 'JSON Database'],
-            github: '#',
             live: 'https://dtirip.my.id',
         },
         {
@@ -33,7 +32,6 @@ const Projects = () => {
             },
             image: project2,
             tech: ['React', 'Node.js', 'Express.js', 'Midtrans API', 'Digiflazz API'],
-            github: '#',
             live: 'https://pgzone.id',
         }
     ];
@@ -96,16 +94,6 @@ const Projects = () => {
                                     whileHover={{ opacity: 1 }}
                                 >
                                     <div className="project-links">
-                                        <motion.a
-                                            href={project.github}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="project-link"
-                                            whileHover={{ scale: 1.1 }}
-                                            whileTap={{ scale: 0.9 }}
-                                        >
-                                            <FiGithub />
-                                        </motion.a>
                                         <motion.a
                                             href={project.live}
                                             target="_blank"
