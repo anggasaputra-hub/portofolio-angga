@@ -112,7 +112,7 @@ a {
 .section-title {
   font-size: clamp(2rem, 5vw, 3rem);
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   position: relative;
 }
 
@@ -133,7 +133,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 14px 32px;
+  padding: 12px 28px;
   border-radius: 50px;
   font-weight: 600;
   font-size: 1rem;
@@ -322,6 +322,7 @@ a {
   background: var(--gradient-1);
   border-color: var(--gradient-1);
   transform: rotate(180deg);
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.5);
 }
 
 .hamburger {
@@ -702,6 +703,9 @@ a {
   overflow: hidden;
   transition: all var(--transition-medium);
   perspective: 1000px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .project-card:hover {
@@ -768,6 +772,9 @@ a {
 
 .project-info {
   padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .project-title {
@@ -779,6 +786,7 @@ a {
   color: var(--text-secondary);
   font-size: 0.95rem;
   margin-bottom: 20px;
+  flex-grow: 1;
 }
 
 .project-tech {
@@ -1065,14 +1073,15 @@ textarea.form-input {
     background: rgba(18, 18, 26, 0.98);
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    padding: 30px 20px;
-    gap: 20px;
+    align-items: center;
+    padding: 30px;
+    gap: 35px;
     transition: right var(--transition-medium);
     border-left: 1px solid var(--glass-border);
     z-index: 1000;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    box-shadow: -10px 0 30px rgba(0,0,0,0.5);
   }
 
   .nav-menu.active {
@@ -1195,9 +1204,13 @@ textarea.form-input {
   }
 
   .about-stats {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-top: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+  }
+  
+  .stat-item:last-child {
+    grid-column: span 2;
   }
 
   .stat-item {
@@ -1570,12 +1583,22 @@ textarea.form-input {
 
 @media (max-width: 768px) {
   .music-player-container {
-    bottom: 90px;
+    bottom: 85px;
     right: 20px;
   }
   
   .music-btn {
-    width: 45px;
-    height: 45px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-item:last-child {
+    grid-column: span 1;
   }
 }

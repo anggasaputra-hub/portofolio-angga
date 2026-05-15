@@ -38,8 +38,8 @@ const ScrollToTop = () => {
                     whileTap={{ scale: 0.9 }}
                     style={{
                         position: 'fixed',
-                        bottom: '20px',
-                        right: '25px', // slightly adjusted to clear scrollbars
+                        bottom: '25px',
+                        right: '20px', // aligned with music player
                         backgroundColor: 'var(--gradient-1)', // Fallback
                         background: 'linear-gradient(135deg, var(--gradient-1), var(--gradient-2))',
                         color: 'white',
