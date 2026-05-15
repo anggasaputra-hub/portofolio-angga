@@ -49,8 +49,9 @@ const Preloader = ({ onComplete }) => {
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
+                style={{ textAlign: 'center', padding: '0 20px' }}
             >
-                <h1 className="gradient-text" style={{ fontSize: '2.5rem', marginBottom: '20px' }}>
+                <h1 className="gradient-text" style={{ fontSize: 'clamp(1.5rem, 8vw, 2.5rem)', marginBottom: '20px', lineHeight: '1.2' }}>
                     {text}<span className="cursor">|</span>
                 </h1>
             </motion.div>
