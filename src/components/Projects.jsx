@@ -90,7 +90,6 @@ const Projects = () => {
                                 />
                                 <motion.div
                                     className="project-overlay"
-                                    initial={{ opacity: 0 }}
                                     whileHover={{ opacity: 1 }}
                                 >
                                     <div className="project-links">

@@ -1324,10 +1324,12 @@ textarea.form-input {
   }
   
   .project-link {
-    width: 38px;
-    height: 38px;
-    font-size: 0.95rem;
-    background: rgba(255, 255, 255, 0.1);
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
   }
 
   .tech-tag {
