@@ -1315,6 +1315,19 @@ textarea.form-input {
     gap: 6px;
   }
 
+  .project-overlay {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    padding: 12px;
+  }
+  
+  .project-link {
+    width: 38px;
+    height: 38px;
+    font-size: 0.95rem;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
   .tech-tag {
     padding: 4px 10px;
     font-size: 0.75rem;
